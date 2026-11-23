@@ -1,0 +1,32 @@
+AIML Activity No. 2
+Name: Akhilesh Kombe
+PRN: 202401040244
+
+REGRESSION MODEL COMPARISON
+Dataset         Algorithm     MAE       MSE    RMSE     R2
+  Steel Linear Regression 199.212 67188.760 259.208 0.2826
+  Steel             Ridge 199.343 66943.685 258.735 0.2853
+  Steel     Decision Tree 127.034 32025.333 178.956 0.6581
+  Steel               KNN 141.207 41330.350 203.299 0.5587
+  Steel               SVR 222.748 85093.810 291.708 0.0915
+  Steel     Random Forest 123.251 31072.501 176.274 0.6682
+MatNavi Linear Regression  68.645  6778.815  82.334 0.5187
+MatNavi             Ridge  67.693  6532.560  80.824 0.5362
+MatNavi     Decision Tree  26.226  1724.079  41.522 0.8776
+MatNavi               KNN  50.714 11179.257 105.732 0.2063
+MatNavi               SVR  80.277 10923.783 104.517 0.2245
+MatNavi     Random Forest  19.789   950.465  30.830 0.9325
+
+CLASSIFICATION MODEL COMPARISON
+          Algorithm  Accuracy  Precision   Recall  F1 Score
+Logistic Regression  0.578053   0.577628 0.582483  0.578475
+      Decision Tree  0.695518   0.700961 0.699396  0.700147
+                KNN  0.616692   0.620240 0.623802  0.617372
+                SVM  0.663060   0.676225 0.666369  0.670033
+      Random Forest  0.701700   0.703454 0.706852  0.704630
+
+OPTIMIZED RANDOM FOREST
+Best parameters: {'randomforestclassifier__max_depth': 10, 'randomforestclassifier__min_samples_leaf': 1, 'randomforestclassifier__n_estimators': 100}
+Cross-validation F1: 0.7069384996238265
+Test accuracy: 0.7047913446676971
+Test F1: 0.7085878614386637
